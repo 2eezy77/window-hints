@@ -1,4 +1,4 @@
-"""User-editable settings: JSON persistence merged with mousemaster defaults."""
+"""User-editable settings: JSON persistence merged with optional shared defaults."""
 
 from __future__ import annotations
 
@@ -81,7 +81,7 @@ class HintAppSettings:
 
 
 def default_hint_settings() -> HintAppSettings:
-    """Baseline from mousemaster + built-in Neo defaults."""
+    """Baseline from optional shared style + built-in Neo defaults."""
     return _defaults_from_mousemaster()
 
 

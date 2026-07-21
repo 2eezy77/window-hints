@@ -50,7 +50,7 @@ class HintOverlay:
         self.root.bind("<Escape>", lambda _: self.hide())
 
     def reload_settings_from_disk(self) -> None:
-        """Reload `user_settings.json` + mousemaster-derived defaults (e.g. after editing JSON)."""
+        """Reload `user_settings.json` + optional shared style defaults."""
         self._hint_settings = load_hint_app_settings()
         self.style = self._hint_settings.to_ui_style()
 
@@ -64,7 +64,7 @@ class HintOverlay:
         if self._scan_busy:
             return
 
-        # Fresh settings + style for this invocation (mousemaster + user JSON).
+        # Fresh settings + style for this invocation (shared defaults + user JSON).
         self._hint_settings = load_hint_app_settings()
         self.style = self._hint_settings.to_ui_style()
         self.alphabet = HINT_ALPHABET

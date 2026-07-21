@@ -1,4 +1,4 @@
-"""Load hint styling from mousemaster.properties (optional)."""
+"""Load hint styling from an optional shared properties file."""
 
 from __future__ import annotations
 
