@@ -4,6 +4,12 @@ Keyboard-driven UI hints for Windows. Scan interactive controls with UI Automati
 
 Runs in the background (tray + global hotkeys). No control window.
 
+## Screenshots
+
+Hints over Google Chrome after the open hotkey (`ctrl+shift+alt`):
+
+![Window hints overlay on Google](docs/overlay-google.jpg)
+
 ## Features
 
 - Full-screen hint overlay across visible windows
